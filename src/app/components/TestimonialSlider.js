@@ -48,7 +48,7 @@ export const TestimonialSlider = () => {
                   ))}
                 </div>
                 <p className="text-gray-600 text-lg mb-6 italic">
-                  "{TESTIMONIALS[currentIndex].text}"
+                  &quot;{TESTIMONIALS[currentIndex].text}&quot;
                 </p>
                 <div className="flex items-center justify-between">
                   <div>

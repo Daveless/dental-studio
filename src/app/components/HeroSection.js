@@ -60,11 +60,13 @@ export const HeroSection = () => {
                 }}
               />
               <div className="absolute inset-0 flex items-center justify-center bg-gray-800/30 backdrop-blur-sm rounded-full shadow-2xl">
-                <img
-                  src="/images/hero.jpg"
-                  alt="Hero"
-                  className="w-full h-full object-cover rounded-full"
-                />
+              <Image
+                src="/images/hero.jpg"
+                alt="Hero"
+                width={500}
+                height={500}
+                className="w-full h-full object-cover rounded-full"
+              />
               </div>
             </div>
           </motion.div>

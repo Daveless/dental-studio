@@ -14,19 +14,20 @@ export const useParallax = (ref, distance = 50) => {
 
   useEffect(() => {
     const element = ref.current;
+    if (!element) return;
+  
     const onScroll = () => {
-      if (!element) return;
       const rect = element.getBoundingClientRect();
-      const scrollY = window.scrollY;
-      setElementTop(rect.top + scrollY);
+      setElementTop(rect.top + window.scrollY);
       setClientHeight(window.innerHeight);
-      setScrollY(scrollY);
+      setScrollY(window.scrollY);
     };
-
+  
     onScroll();
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
-  }, [ref]);
+  }, []);
+  
 
   useEffect(() => {
     const element = ref.current;
