@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { BackgroundShapes } from './svg/BackgroundShapes';
 import { SITE_CONFIG } from '../utils/constants';
+import Image from 'next/image';
 
 export const HeroSection = () => {
   return (
