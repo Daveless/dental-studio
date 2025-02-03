@@ -16,7 +16,7 @@ const config: Config = {
         mint: '#b5e3d8',       // Verde menta
         'mint-dark': '#8fb3ac',
         gray: {
-          ...defaultTheme.colors.gray,
+          ...defaultTheme.theme?.extend?.colors?.gray || {}, // <-- Esto evita el error
           custom: '#d9d9d9',
         },
       },
