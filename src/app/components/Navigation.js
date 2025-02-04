@@ -26,14 +26,14 @@ export const Navigation = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <nav className="container-custom py-4 px-12">
+      <nav className="container-custom py-1 px-3">
         <div className="flex items-center justify-between">
           <motion.div
             className="flex items-center space-x-2 "
             whileHover={{ scale: 1.05 }}
           >
             <TeethLogo />
-            <span className="font-bold text-xl text-primary">
+            <span className="font-bold text-[18px] text-primary">
               {SITE_CONFIG.name}
             </span>
           </motion.div>
